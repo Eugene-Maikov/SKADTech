@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCAD tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__top">
+                    <div class="header__inner">
+                        <div class="header__item-left">
+                            <a href="index.html" class="header__logo">
+                                <img class="header__logo-img" src="images/logo-header.png" alt="logo">
+                            </a>
+                            <div class="header__slogan">Комплексные решения в сфере управления технологиями</div>
+                        </div>
+                        <div class="header__item-right">
+                            <div class="header__contacts">
+                                <a class="header__contacts-number" href="tel:+7495748032">
+                                    <img class="img_phone-blue" src="images/icons/phone-blue.svg" alt="image-phone">
+                                    <p class="number">+7 495 74-80-32</p>
+                                </a>
+                                <a class="header__contacts-mail" href="mailto:info@scad.su">
+                                    <img class=" img__mail-blue" src="images/icons/mail-blue.svg" alt="image-mail">
+                                    <p class="mail">info@scad.su</p>
+                                </a>
+                            </div>
+                            <button class="header__contacts-btn" data-modal="#modal_hire_me">Подать заявку</button>
+                            <div class="menu__burger" id="burger">
+                                <img class="menu__burger-icon" src="images/icons/menu.svg" alt="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <ul class="menu">
+                        <li class="menu__list">
+                            <a class="menu__link" href="#">О нас</a>
+                        </li>
+                        <li class="menu__list">
+                            <a class="menu__link" href="products.html">Производство</a>
+                        </li>
+                        <li class="menu__list">
+                            <a class="menu__link" href="documentation.html">Документация</a>
+                        </li>
+                        <li class="menu__list">
+                            <a class="menu__link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="window__menu" id="window-menu">
+                <div class="window__menu-inner">
+                    <a class="modal__close" href="#" type="button" data-close>
+                        <img class="close__menu-btn" src="images/icons/menu-white.svg" alt="">
+                    </a>
+                    <ul class="window__menu-nav">
+                        <li class="window__menu-list">
+                            <a class="window__menu-link" href="#">О нас</a>
+                        </li>
+                        <li class="window__menu-list">
+                            <a class="window__menu-link" href="products.html">Производство</a>
+                        </li>
+                        <li class="window__menu-list">
+                            <a class="window__menu-link" href="documentation.html">Документация</a>
+                        </li>
+                        <li class="window__menu-list">
+                            <a class="window__menu-link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="window__menu-contacts">
+                        <a class="window__contacts-number" href="tel:+7495748032">
+                            <img class="img_phone-blue" src="images/icons/phone-blue.svg" alt="image-phone">
+                            <p class="number">+7 495 74-80-32</p>
+                        </a>
+                        <a class="window__contacts-mail" href="mailto:info@scad.su">
+                            <img class=" img__mail-blue" src="images/icons/mail-blue.svg" alt="image-mail">
+                            <p class="mail">info@scad.su</p>
+                        </a>
+                    </div>
+                    <button class="window__contacts-btn" data-modal="#modal_hire_me">Подать заявку</button>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="about">
+                <div class="container-fluid">
+                    <div class="about__inner">
+                        <div class="about__title">Компания SCAD tech</div>
+                        <p class="about__text">
+                            Группа компаний «СКАД тех» — эксперт в разработке
+                            и внедрении комплексных решений в сфере
+                            автоматизации технологических процессов.
+                        </p>
+                        <p class="about__text">
+                            Мы — надежный производитель и интегратор передовых
+                            систем автоматизированного управления для
+                            нефтегазового сектора, горно-металлургической
+                            промышленности, энергетики, транспорта и
+                            инфраструктуры. Объединив профессиональные знания
+                            и компетенции, используя инновационные
+                            технологии, мы помогаем нашим клиентам решать
+                            их производственные задачи.
+
+                        </p>
+                        <p class="about__text about__text--line">
+                            Создавая решения мы применяем современные аппаратные
+                            и программные комплексы мировых лидеров в сфере
+                            автоматизации технологических процессов (Siemens,
+                            Schneider Electric, B&R, ABB), а также ведущих
+                            российских производителей (PROSOFT).
+                            На собственных производственных мощностях мы
+                            выпускаем десятки типов высококачественной
+                            продукции для систем автоматизации.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="priorities">
+                <div class="container-fluid">
+                    <h2 class="priorities__title">Наши приоритеты</h2>
+                    <div class="priorities__inner">
+                        <div class="priorities__item">
+                            <div class="priorities__content">
+                                <div class="priorities__top">
+                                    <span class="priorities__top-number priorities__top-number--01">01</span>
+                                    <h3 class="priorities__top-title">Наше имя</h3>
+                                </div>
+                                <p class="priorities__text">
+                                    <strong>Имя «СКАД тех» — наивысшая ценность, которую
+                                        мы гордо несем вот уже 7 лет.</strong> Это визитная
+                                    карточка предприятия, поставляющего своим
+                                    заказчикам первоклассную продукцию.
+                                </p>
+                            </div>
+                            <div class="priorities__image">
+                                <img src="images/priorities/01.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="priorities__item">
+                            <div class="priorities__content">
+                                <div class="priorities__top">
+                                    <span class="priorities__top-number">02</span>
+                                    <h3 class="priorities__top-title">Надежность</h3>
+                                </div>
+                                <p class="priorities__text">
+                                    <strong>Успех партнера — наша цель.</strong>
+                                    Нам важно, чтобы в словах и делах, как и в
+                                    наших услугах, чувствовалась и имела
+                                    подтверждение в реальности надежность.
+                                </p>
+                            </div>
+                            <div class="priorities__image">
+                                <img src="images/priorities/02.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="priorities__item">
+                            <div class="priorities__content">
+                                <div class="priorities__top">
+                                    <span class="priorities__top-number">03</span>
+                                    <h3 class="priorities__top-title">Результат</h3>
+                                </div>
+                                <p class="priorities__text">
+                                    <strong>Нам важен результат, а не процесс его достижения.</strong>
+                                    Не важны красивые слова, дела, движения, активность, если они не
+                                    приводят к требуемому результату.
+                                </p>
+                            </div>
+                            <div class="priorities__image">
+                                <img src="images/priorities/03.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="priorities__item">
+                            <div class="priorities__content">
+                                <div class="priorities__top">
+                                    <span class="priorities__top-number">04</span>
+                                    <h3 class="priorities__top-title">Клиентинг</h3>
+                                </div>
+                                <p class="priorities__text">
+                                    <strong>Заказчик — на первом месте.</strong>
+                                    Нам важно чтобы клиент знал, что от нас ожидать,
+                                    чтобы ему было надежно работать с нами
+                                    и с нашими продуктами.
+                                </p>
+                            </div>
+                            <div class="priorities__image">
+                                <img src="images/priorities/04.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="priorities__item">
+                            <div class="priorities__content">
+                                <div class="priorities__top">
+                                    <span class="priorities__top-number">05</span>
+                                    <h3 class="priorities__top-title">Команда</h3>
+                                </div>
+                                <p class="priorities__text">
+                                    <strong>Наш главный актив — команда.</strong>
+                                    Нам важно, когда мы кого-то принимаем в команду,
+                                    работать сообща, а не каждого конкретного члена команды.
+                                </p>
+                            </div>
+                            <div class="priorities__image">
+                                <img src="images/priorities/05.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="priorities__item">
+                            <div class="priorities__content">
+                                <div class="priorities__top">
+                                    <span class="priorities__top-number">06</span>
+                                    <h3 class="priorities__top-title">Эффективность</h3>
+                                </div>
+                                <p class="priorities__text">
+                                    <strong>Эффективность отличает нас от конкурентов.</strong>
+                                    Нам важны эффективные решения и действия.
+                                    А это значит получать требуемый результат с
+                                    минимальными затратами денег и времени.
+                                </p>
+                            </div>
+                            <div class="priorities__image">
+                                <img src="images/priorities/06.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mate">
+                <div class="container">
+                    <h2 class="mate__title">Наши партнеры</h2>
+                    <div class="mate__inner">
+                        <div class="mate__item">
+                            <img class="mate__image" src="images/partners/abb.png" alt="image">
+                            <h3 class="mate__item-title">ABB</h3>
+                            <p class="mate__text">
+                                Мировой технологический лидер в областях
+                                электрооборудования, робототехники и механизмов
+                                движения, промышленной автоматизации и электрических сетей.
+                            </p>
+                        </div>
+                        <div class="mate__item">
+                            <img class="mate__image" src="images/partners/simens.png" alt="image">
+                            <h3 class="mate__item-title">Siemens</h3>
+                            <p class="mate__text">
+                                Ведущий поставщик продукции, услуг и
+                                комплексных решений для модернизации
+                                ключевых отраслей экономики и инфраструктуры.
+                            </p>
+                        </div>
+                        <div class="mate__item">
+                            <img class="mate__image" src="images/partners/pro-soft.png" alt="image">
+                            <h3 class="mate__item-title">ООО "Прософт-Системы"</h3>
+                            <p class="mate__text">
+                                Компания занимается разработкой,
+                                поставкой и внедрением под ключ
+                                высокотехнологичных приборов и
+                                систем автоматизации.
+                            </p>
+                        </div>
+                        <div class="mate__item">
+                            <img class="mate__image" src="images/partners/vzlet.png" alt="image">
+                            <h3 class="mate__item-title">ООО "Торговый Дом "Взлет"</h3>
+                            <p class="mate__text">
+                                Разработка и производство приборов
+                                учета расхода жидкостей, газа
+                                и тепловой энергии.
+                            </p>
+                        </div>
+                        <div class="mate__item">
+                            <img class="mate__image" src="images/partners/fujitsu.png" alt="image">
+                            <h3 class="mate__item-title">Fujitsu</h3>
+                            <p class="mate__text">
+                                Поставщик инфраструктурных решений
+                                на рынке информационных и
+                                коммуникационных технологий.
+                            </p>
+                        </div>
+                        <div class="mate__item">
+                            <img class="mate__image" src="images/partners/schneider.png" alt="image">
+                            <h3 class="mate__item-title">Schneider Electric</h3>
+                            <p class="mate__text">
+                                Ведущий разработчик и поставщик
+                                комплексных энергоэффективных
+                                решений для энергетики и инфраструктуры,
+                                промышленных предприятий,
+                                объектов гражданского.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+        </main>
+
+
+
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer-top">
+                        <a href="index.html" class="footer__logo">
+                            <img src="images/logo-footer.png" alt="logo-footer">
+                        </a>
+                        <div class="footer__contacts">
+                            <a class="footer__contacts-number" href="tel:+7495748032">
+                                <img src="images/icons/phone-white.svg" alt="phone white">
+                                <p class="number">+7 495 74-80-32</p>
+                            </a>
+                            <a class="footer__contacts-mail" href="mailto:info@scad.su">
+                                <img src="images/icons/mail-white.svg" alt="mail white">
+                                <p class="mail">info@scad.su</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="footer-info">
+                            <ul class="map-site">
+                                <li class="map-site__list">
+                                    <a href="#" class="map-site__link">О нас</a>
+                                </li>
+                                <li class="map-site__list">
+                                    <a href="products.html" class="map-site__link">Производство</a>
+                                </li>
+                                <li class="map-site__list">
+                                    <a href="documentation.html" class="map-site__link">Документация</a>
+                                </li>
+                                <li class="map-site__list">
+                                    <a href="contacts.html" class="map-site__link">Контакты</a>
+                                </li>
+                            </ul>
+                            <p class="footer__text">
+                                Использование самых современных
+                                технологий автоматизированного
+                                проектирования для решения
+                                задач наших клиентов.
+                            </p>
+                        </div>
+                        <div class="footer__address">
+                            <img class="footer-location" src="images/icons/contacts/loc.svg" alt="location">
+                            <p class="footer__address-text">
+                                129110, Москва, Олимпийский проспект, д. 16, стр. 5
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer__copyright">© 2007-2021Частная компания —
+                        фонд реформированию жилищно-коммунального хозяйства</div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal" id="modal_hire_me">
+        <div class="modal__dialog modal__dialog--sm">
+            <a class="modal__close" href="#" type="button" data-close>
+                <img class="modal__close-img" src="images/icons/close.svg" alt="">
+            </a>
+            <div class="feedback">
+                <h4 class="feedback__title">ОБРАТНАЯ СВЯЗЬ</h4>
+                <p class="feedback__text">Чтобы оставить заявку вы
+                    можете заполнить формы или связаться с нами через раздел контакты</p>
+            </div>
+    
+            <form class="form" action="vendor/create.php" method="post">
+                <div class="form__group">
+                    <label class="form__label" for="input-name">Ваше имя</label>
+                    <input class="form__input" name="input-name" type="text" placeholder="Имя" required>
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="input-email">Ваша почта</label>
+                    <input class="form__input" name="input-email" type="text" placeholder="Email" required>
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="input-text">Запрос</label>
+                    <textarea class="form__textarea" name="input-text" placeholder="Запрос" required></textarea>
+                </div>
+                <div class="form__group-checkbox">
+                    <input class="form__checkbox" type="checkbox" required>
+                    <p class="form__checkbox-text">Даю согласие на обработку <a class="checkbox__text-link"
+                            href="https://youdo.com/terms">персональных данных</a></p>
+                </div>
+                <button class="form-btn submit" type="submit">Отправить</button>
+            </form>
+        </div>
+        <!--/.modal__dialog-->
+    </div>
+    <!--/.modal-->
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

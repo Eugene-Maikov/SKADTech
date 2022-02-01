@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCAD tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__top">
+                    <div class="header__inner">
+                        <div class="header__item-left">
+                            <a href="index.html" class="header__logo">
+                                <img class="header__logo-img" src="images/logo-header.png" alt="logo">
+                            </a>
+                            <div class="header__slogan">Комплексные решения в сфере управления технологиями</div>
+                        </div>
+                        <div class="header__item-right">
+                            <div class="header__contacts">
+                                <a class="header__contacts-number" href="tel:+7495748032">
+                                    <img class="img_phone-blue" src="images/icons/phone-blue.svg" alt="image-phone">
+                                    <p class="number">+7 495 74-80-32</p>
+                                </a>
+                                <a class="header__contacts-mail" href="mailto:info@scad.su">
+                                    <img class=" img__mail-blue" src="images/icons/mail-blue.svg" alt="image-mail">
+                                    <p class="mail">info@scad.su</p>
+                                </a>
+                            </div>
+                            <button class="header__contacts-btn" data-modal="#modal_hire_me">Подать заявку</button>
+                            <div class="menu__burger" id="burger">
+                                <img class="menu__burger-icon" src="images/icons/menu.svg" alt="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <ul class="menu">
+                        <li class="menu__list">
+                            <a class="menu__link" href="about.html">О нас</a>
+                        </li>
+                        <li class="menu__list">
+                            <a class="menu__link" href="#">Производство</a>
+                        </li>
+                        <li class="menu__list">
+                            <a class="menu__link" href="documentation.html">Документация</a>
+                        </li>
+                        <li class="menu__list">
+                            <a class="menu__link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="window__menu" id="window-menu">
+                <div class="window__menu-inner">
+                    <a class="modal__close" href="#" type="button" data-close>
+                        <img class="close__menu-btn" src="images/icons/menu-white.svg" alt="">
+                    </a>
+                    <ul class="window__menu-nav">
+                        <li class="window__menu-list">
+                            <a class="window__menu-link" href="about.html">О нас</a>
+                        </li>
+                        <li class="window__menu-list">
+                            <a class="window__menu-link" href="#">Производство</a>
+                        </li>
+                        <li class="window__menu-list">
+                            <a class="window__menu-link" href="documentation.html">Документация</a>
+                        </li>
+                        <li class="window__menu-list">
+                            <a class="window__menu-link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="window__menu-contacts">
+                        <a class="window__contacts-number" href="tel:+7495748032">
+                            <img class="img_phone-blue" src="images/icons/phone-blue.svg" alt="image-phone">
+                            <p class="number">+7 495 74-80-32</p>
+                        </a>
+                        <a class="window__contacts-mail" href="mailto:info@scad.su">
+                            <img class=" img__mail-blue" src="images/icons/mail-blue.svg" alt="image-mail">
+                            <p class="mail">info@scad.su</p>
+                        </a>
+                    </div>
+                    <button class="window__contacts-btn" data-modal="#modal_hire_me">Подать заявку</button>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="products">
+                <div class="container-fluid">
+                    <div class="products__inner">
+                        <div class="products__content">
+                            <div class="products__title">Наша продукция</div>
+                            <div class="products__text">
+                                «СКАД тех» — лидер в разработке российского
+                                ПО для построения многоуровневых
+                                территориально-распределенных систем
+                                сбора данных и управления, прикладного
+                                ПО для управления трубопроводным транспортом.
+                            </div>
+                        </div>
+                        <img class="products__image" src="images/graphic.png" alt="image">
+                    </div>
+                </div>
+            </section>
+            <div class="article">
+                <div class="container">
+                    <div class="article__inner">
+                        <div class="article__item">
+                            <img class="article__image" src="images/products/prod-1.jpg" alt="image">
+                            <div class="article__content">
+                                <div class="article__title">Шкафы, щиты и приборные консоли</div>
+                                <div class="article__text">
+                                    Шкафы, щиты и приборные консоли
+                                    систем автоматики нефтеперекачивающих
+                                    станций предназначены для работы в
+                                    составе МПСА, служат для размещения
+                                    контрольно-измерительных приборов и
+                                    приборов управления.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article__item">
+                            <img class="article__image" src="images/products/prod-2.jpg" alt="image">
+                            <div class="article__content">
+                                <div class="article__title">Блок-контейнерная продукция</div>
+                                <div class="article__text">
+                                    Компания «СКАД тех» является одним
+                                    из лидеров на рынке по производству
+                                    и сборке блок-контейнеров пункта
+                                    контроля управления (БК ПКУ).
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article__item">
+                            <img class="article__image" src="images/products/prod-3.jpg" alt="image">
+                            <div class="article__content">
+                                <div class="article__title">Электротехническая продукция</div>
+                                <div class="article__text">
+                                    Комплектное распределительное устройство (КРУ)
+                                    предназначено для приема и распределения
+                                    электроэнергии трехфазного переменного
+                                    тока с номинальным напряжением
+                                    6.3 или 10 кВ (50 Гц).
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article__item">
+                            <img class="article__image" src="images/products/prod-4.jpg" alt="image">
+                            <div class="article__content">
+                                <div class="article__title">Средства измерения</div>
+                                <div class="article__text">
+                                    Компания «СКАД тех» предлагает комплексные
+                                    инженерные решения по созданию различных
+                                    систем измерения. Наши специалисты
+                                    совместно с зарубежными партнерами постоянно
+                                    изучают инновационные технологии и
+                                    совершенствуют предлагаемые решения,
+                                    учитывая потребности наших клиентов
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article__item">
+                            <img class="article__image" src="images/products/prod-5.jpg" alt="image">
+                            <div class="article__content">
+                                <div class="article__title">SCAD CC Pipeline Kit</div>
+                                <div class="article__text">
+                                    Компания «СКАД тех» предлагает комплексные
+                                    инженерные решения по созданию различных
+                                    систем измерения. Наши специалисты
+                                    совместно с зарубежными партнерами
+                                    постоянно изучают инновационные технологии
+                                    и совершенствуют предлагаемые решения,
+                                    учитывая потребности наших клиентов
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article__item">
+                            <img class="article__image" src="images/products/prod-6.jpg" alt="image">
+                            <div class="article__content">
+                                <div class="article__title">Программный SCADA-пакет SCAD CC
+                                </div>
+                                <div class="article__text">
+                                    Программный SCADA-пакет SCAD CC предназначен
+                                    для использования в области автоматизации
+                                    технологического процесса. Основная сфера
+                                    применения — работа с программным обеспечением
+                                    и эксплуатация технологического оборудования
+                                    посредством АРМ (автоматизированного рабочего места).
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </main>
+
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer-top">
+                        <a href="index.html" class="footer__logo">
+                            <img src="images/logo-footer.png" alt="logo-footer">
+                        </a>
+                        <div class="footer__contacts">
+                            <a class="footer__contacts-number" href="tel:+7495748032">
+                                <img src="images/icons/phone-white.svg" alt="phone white">
+                                <p class="number">+7 495 74-80-32</p>
+                            </a>
+                            <a class="footer__contacts-mail" href="mailto:info@scad.su">
+                                <img src="images/icons/mail-white.svg" alt="mail white">
+                                <p class="mail">info@scad.su</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="footer-info">
+                            <ul class="map-site">
+                                <li class="map-site__list">
+                                    <a class="map-site__link" href="about.html">О нас</a>
+                                </li>
+                                <li class="map-site__list">
+                                    <a class="map-site__link" href="#">Производство</a>
+                                </li>
+                                <li class="map-site__list">
+                                    <a class="map-site__link" href="documentation.html">Документация</a>
+                                </li>
+                                <li class="map-site__list">
+                                    <a class="map-site__link" href="contacts.html">Контакты</a>
+                                </li>
+                            </ul>
+                            <p class="footer__text">
+                                Использование самых современных
+                                технологий автоматизированного
+                                проектирования для решения
+                                задач наших клиентов.
+                            </p>
+                        </div>
+                        <div class="footer__address">
+                            <img class="footer-location" src="images/icons/contacts/loc.svg" alt="location">
+                            <p class="footer__address-text">
+                                129110, Москва, Олимпийский проспект, д. 16, стр. 5
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer__copyright">© 2007-2021Частная компания —
+                        фонд реформированию жилищно-коммунального хозяйства</div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <div class="modal" id="modal_hire_me">
+        <div class="modal__dialog modal__dialog--sm">
+            <a class="modal__close" href="#" type="button" data-close>
+                <img class="modal__close-img" src="images/icons/close.svg" alt="">
+            </a>
+            <div class="feedback">
+                <h4 class="feedback__title">ОБРАТНАЯ СВЯЗЬ</h4>
+                <p class="feedback__text">Чтобы оставить заявку вы
+                    можете заполнить формы или связаться с нами через раздел контакты</p>
+            </div>
+    
+            <form class="form" action="vendor/create.php" method="post">
+                <div class="form__group">
+                    <label class="form__label" for="input-name">Ваше имя</label>
+                    <input class="form__input" name="input-name" type="text" placeholder="Имя" required>
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="input-email">Ваша почта</label>
+                    <input class="form__input" name="input-email" type="text" placeholder="Email" required>
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="input-text">Запрос</label>
+                    <textarea class="form__textarea" name="input-text" placeholder="Запрос" required></textarea>
+                </div>
+                <div class="form__group-checkbox">
+                    <input class="form__checkbox" type="checkbox" required>
+                    <p class="form__checkbox-text">Даю согласие на обработку <a class="checkbox__text-link"
+                            href="https://youdo.com/terms">персональных данных</a></p>
+                </div>
+                <button class="form-btn submit" type="submit">Отправить</button>
+            </form>
+        </div>
+        <!--/.modal__dialog-->
+    </div>
+    <!--/.modal-->
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCAD tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__top">
+                    <div class="header__inner">
+                        <div class="header__item-left">
+                            <div class="header__logo">
+                                <img class="header__logo-img" src="images/logo-header.png" alt="logo">
+                            </div>
+                            <div class="header__slogan">Комплексные решения в сфере управления технологиями</div>
+                        </div>
+                        <div class="header__item-right">
+                            <div class="header__contacts">
+                                <a class="header__contacts-number" href="tel:+7495748032">
+                                    <img class="img_phone-blue" src="images/icons/phone-blue.svg" alt="image-phone">
+                                    <p class="number">+7 495 74-80-32</p>
+                                </a>
+                                <a class="header__contacts-mail" href="mailto:info@scad.su">
+                                    <img class=" img__mail-blue" src="images/icons/mail-blue.svg" alt="image-mail">
+                                    <p class="mail">info@scad.su</p>
+                                </a>
+                            </div>
+                            <button class="header__contacts-btn" data-modal="#modal_hire_me">Подать заявку</button>
+                            <div class="menu__burger" id="burger">
+                                <img class="menu__burger-icon" src="images/icons/menu.svg" alt="icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <ul class="menu">
+                        <li class="menu__list">
+                            <a class="menu__link" href="about.html">О нас</a>
+                        </li>
+                        <li class="menu__list">
+                            <a class="menu__link" href="products.html">Производство</a>
+                        </li>
+                        <li class="menu__list">
+                            <a class="menu__link" href="documentation.html">Документация</a>
+                        </li>
+                        <li class="menu__list">
+                            <a class="menu__link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="window__menu" id="window-menu">
+                <div class="window__menu-inner">
+                    <a class="modal__close" href="#" type="button" data-close>
+                        <img class="close__menu-btn" src="images/icons/menu-white.svg" alt="">
+                    </a>
+                    <ul class="window__menu-nav">
+                        <li class="window__menu-list">
+                            <a class="window__menu-link" href="about.html">О нас</a>
+                        </li>
+                        <li class="window__menu-list">
+                            <a class="window__menu-link" href="products.html">Производство</a>
+                        </li>
+                        <li class="window__menu-list">
+                            <a class="window__menu-link" href="documentation.html">Документация</a>
+                        </li>
+                        <li class="window__menu-list">
+                            <a class="window__menu-link" href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="window__menu-contacts">
+                        <a class="window__contacts-number" href="tel:+7495748032">
+                            <img class="img_phone-blue" src="images/icons/phone-blue.svg" alt="image-phone">
+                            <p class="number">+7 495 74-80-32</p>
+                        </a>
+                        <a class="window__contacts-mail" href="mailto:info@scad.su">
+                            <img class=" img__mail-blue" src="images/icons/mail-blue.svg" alt="image-mail">
+                            <p class="mail">info@scad.su</p>
+                        </a>
+                    </div>
+                    <button class="window__contacts-btn" data-modal="#modal_hire_me">Подать заявку</button>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="intro">
+                <div class="container">
+                    <div class="intro__inner">
+                        <h1 class="intro__title">SCAD tech</h1>
+                        <p class="intro__text">Развитие передовых
+                            производств в сфере автоматизации технологических
+                            процессов. Лучшие экспертные ресурсы
+                            для создания новых, высокотехнологичных
+                            продуктов. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="partners">
+                <div class="container">
+                    <div class="partners__inner">
+                        <div class="partners__item">
+                            <img class="partners__img" src="images/partners/газпром.png" alt="">
+                        </div>
+                        <div class="partners__item">
+                            <img class="partners__img" src="images/partners/лукойл.png" alt="">
+                        </div>
+                        <div class="partners__item">
+                            <img class="partners__img" src="images/partners/роснефть.png" alt="">
+                        </div>
+                        <div class="partners__item">
+                            <img class="partners__img" src="images/partners/транснефть.png" alt="">
+                        </div>
+                        <div class="partners__item">
+                            <img class="partners__img" src="images/partners/ростелеком.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="sistems">
+                <div class="container">
+                    <h2 class="sistems__title">Системы автоматизации
+                        и телемеханизации «под ключ»</h2>
+                    <div class="sistems__inner">
+                        <div class="sistems__item">
+                            <div class="sistems__item-top">
+                                <div class="sistems__item-icon">
+                                    <img class="sistems__icon" src="images/icons/sistem-1.svg" alt="icon">
+                                </div>
+                                <h3 class="sistems__item-title">Системы поддержки
+                                    принятия решений,
+                                    анализа и управления</h3>
+                            </div>
+                            <div class="sistems__item-text">
+                                Математические модели процессов и использование
+                                компьютерного «интеллекта» позволяет
+                                управлять сложными распределенными системами
+                                безопасно и эффективно.
+                            </div>
+                        </div>
+                        <div class="sistems__item">
+                            <div class="sistems__item-top">
+                                <div class="sistems__item-icon">
+                                    <img class="sistems__icon" src="images/icons/sistem-2.svg" alt="icon">
+                                </div>
+                                <h3 class="sistems__item-title">Серийная продукция собственного производства</h3>
+                            </div>
+                            <div class="sistems__item-text">
+                                Наличие компетенций по разработке и собственное
+                                производство аппаратных средств АСУ ТП и
+                                энергетического хозяйства позволяет создать
+                                максимально эффективную, интегрированную
+                                автоматизированную систему, гибко
+                                реагировать на пожелания заказчиков.
+                            </div>
+                        </div>
+                        <div class="sistems__item">
+                            <div class="sistems__item-top">
+                                <div class="sistems__item-icon">
+                                    <img class="sistems__icon" src="images/icons/sistem-3.svg" alt="icon">
+                                </div>
+                                <h3 class="sistems__item-title">Диспетчерские системы</h3>
+                            </div>
+                            <div class="sistems__item-text">
+                                Современные диспетчерские системы контролируют
+                                и управляют технологическим процессом
+                                быстро и просто, снижая риски человеческого
+                                фактора в техногенных катастрофах и авариях
+                                на производстве.
+                            </div>
+                        </div>
+                        <div class="sistems__item">
+                            <div class="sistems__item-top">
+                                <div class="sistems__item-icon">
+                                    <img class="sistems__icon" src="images/icons/sistem-4.svg" alt="icon">
+                                </div>
+                                <h3 class="sistems__item-title">Автоматизированные системы управления и учета</h3>
+                            </div>
+                            <div class="sistems__item-text">
+                                Автоматизированные системы гарантируют
+                                большую безопасность, надежность и эффективность
+                                работы объектов управления, предотвращают
+                                загрязнение окружающей среды.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="geography">
+                <div class="container">
+                    <div class="geography__inner">
+                        <h2 class="geography__title">География проектовa</h2>
+                        <div class="geography__text-bold">
+                            Группа компаний SCAD tech
+                            имеет более 17 лет опыта работы в автомобильной
+                            промышленности и промышленной автоматизации.
+                        </div>
+                        <div class="geography__text">
+                            Мы занимаем прочную позицию на нефтяном
+                            и газовом рынке и является многолетним
+                            надежным партнером как для российских,
+                            так и для зарубежных компаний.
+                        </div>
+                        <button class="geography-btn" data-modal="#modal_hire_me">Подать заявку</button>
+                    </div>
+                </div>
+            </section>
+            <section class="company">
+                <div class="container">
+                    <div class="company__inner">
+                        <div class="company__content">
+                            <h3 class="company__title">Компания SCAD tech</h3>
+                            <div class="company__text">
+                                Группа компаний «СКАД тех» — эксперт в
+                                разработке и внедрении комплексных решений
+                                в сфере автоматизации технологических процессов.
+                            </div>
+                        </div>
+                        <div class="company__info">
+                            <div class="company__info-item">
+                                <div class="company__info-number">17</div>
+                                <div class="company__info-description">
+                                    лет опыта работы
+                                    в промышленной
+                                    автоматизации
+                                </div>
+                            </div>
+                            <div class="company__info-item">
+                                <div class="company__info-number">9000</div>
+                                <div class="company__info-description">
+                                    кв.м — производственная площадь
+                                </div>
+                            </div>
+                            <div class="company__info-item">
+                                <div class="company__info-number">11</div>
+                                <div class="company__info-description">
+                                    офисов компании в городах России
+                                </div>
+                            </div>
+                            <div class="company__info-item">
+                                <div class="company__info-number">920</div>
+                                <div class="company__info-description">
+                                    квалифицированных сотрудников
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+        </main>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <!-- Верхняя часть подвала -->
+                    <div class="footer-top">
+                        <div class="footer__logo">
+                            <img src="images/logo-footer.png" alt="logo-footer">
+                        </div>
+                        <div class="footer__contacts">
+                            <a class="footer__contacts-number" href="tel:+7495748032">
+                                <img src="images/icons/phone-white.svg" alt="phone white">
+                                <p class="number">+7 495 74-80-32</p>
+                            </a>
+                            <a class="footer__contacts-mail" href="mailto:info@scad.su">
+                                <img src="images/icons/mail-white.svg" alt="mail white">
+                                <p class="mail">info@scad.su</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Нижняя часть подвала -->
+                    <div class="footer-bottom">
+                        <div class="footer-info">
+                            <ul class="map-site">
+                                <li class="map-site__list">
+                                    <a href="about.html" class="map-site__link">О нас</a>
+                                </li>
+                                <li class="map-site__list">
+                                    <a href="products.html" class="map-site__link">Производство</a>
+                                </li>
+                                <li class="map-site__list">
+                                    <a href="documentation.html" class="map-site__link">Документация</a>
+                                </li>
+                                <li class="map-site__list">
+                                    <a href="contacts.html" class="map-site__link">Контакты</a>
+                                </li>
+                            </ul>
+                            <p class="footer__text">
+                                Использование самых современных
+                                технологий автоматизированного
+                                проектирования для решения
+                                задач наших клиентов.
+                            </p>
+                        </div>
+                        <div class="footer__address">
+                            <img class="footer-location" src="images/icons/contacts/loc.svg" alt="location">
+                            <p class="footer__address-text">
+                                129110, Москва, Олимпийский проспект, д. 16, стр. 5
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer__copyright">© 2007-2021Частная компания —
+                        фонд реформированию жилищно-коммунального хозяйства</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="modal" id="modal_hire_me">
+        <div class="modal__dialog modal__dialog--sm">
+            <a class="modal__close" href="#" type="button" data-close>
+                <img class="modal__close-img" src="images/icons/close.svg" alt="">
+            </a>
+            <div class="feedback">
+                <h4 class="feedback__title">ОБРАТНАЯ СВЯЗЬ</h4>
+                <p class="feedback__text">Чтобы оставить заявку вы
+                    можете заполнить формы или связаться с нами через раздел контакты</p>
+            </div>
+
+            <form class="form" action="vendor/create.php" method="post">
+                <div class="form__group">
+                    <label class="form__label" for="input-name">Ваше имя</label>
+                    <input class="form__input" name="input-name" type="text" placeholder="Имя" required>
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="input-email">Ваша почта</label>
+                    <input class="form__input" name="input-email" type="text" placeholder="Email" required>
+                </div>
+                <div class="form__group">
+                    <label class="form__label" for="input-text">Запрос</label>
+                    <textarea class="form__textarea" name="input-text" placeholder="Запрос" required></textarea>
+                </div>
+                <div class="form__group-checkbox">
+                    <input class="form__checkbox" type="checkbox" required>
+                    <p class="form__checkbox-text">Даю согласие на обработку <a class="checkbox__text-link" href="https://youdo.com/terms">персональных данных</a></p>
+                </div>
+                <button class="form-btn submit" type="submit">Отправить</button>
+            </form>
+        </div>
+        <!--/.modal__dialog-->
+    </div>
+    <!--/.modal-->
+
+
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
